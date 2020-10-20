@@ -1,7 +1,12 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import PlayerController from "./Controllers/PlayerController.js";
+import QuestionController from "./Controllers/QuestionController.js";
 
 class App {
-  valuesController = new ValuesController();
+  playerController = new PlayerController();
+
+  questionController = new QuestionController();
 }
 
 window["app"] = new App();
+
+console.log(window)

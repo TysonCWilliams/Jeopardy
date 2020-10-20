@@ -21,7 +21,10 @@
         </nav>
     </header>
     <main>
-        <div id="app"></div>
+        <div class="container-fluid" id="app">
+            <div class="row" id="questions"></div>
+            <button class="btn btn-primary" onclick="app.questionController.getQuestions()">Get Question</button>
+        </div>
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
@@ -30,7 +33,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 
